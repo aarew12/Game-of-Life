@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>The game of life</title>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style><!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="application/javascript" src="js/script.js"></script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="700" height="700" onclick="clickCanvas(event)"></canvas>
+   <br/>
+   <button onclick="step()">Step</button>
+   Step delay (ms): <input type="text" id="delay" value="500">
+   <button onclick="makeSteps()">Make Steps</button>
+   <button onclick="stopSteps()">Stop Steps</button>
+   <br/>
+   Grid size: <input type="text" id="size" value="20">
+   <button onclick="setSize()">Set size</button>
+   <br/>
+   <input type="file" id="input">
+   <button onclick="loadCSV()">Load browsed file</button>
+ </body>
+</html>
